@@ -1,0 +1,26 @@
+{
+    "name": "isro-climate",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "leaflet": "^1.9.4",
+        "next": "^15.5.19",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-leaflet": "^4.2.1",
+        "recharts": "^3.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "20.17.6",
+        "@types/react": "19.2.17",
+        "autoprefixer": "^10.4.23",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5.5.4"
+    }
+}
