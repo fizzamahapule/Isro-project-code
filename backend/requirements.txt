@@ -3,6 +3,8 @@ uvicorn
 pandas
 numpy
 scikit-learn
-requests
+torch
+torchvision
+torchaudio
+python-multipart
 python-dotenv
-matplotlib
