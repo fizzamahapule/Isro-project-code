@@ -2,10 +2,20 @@
 
 export default function SearchBar() {
   return (
-    <input
-      type="text"
-      placeholder="Search State..."
-      className="w-full bg-slate-800 rounded-lg p-4 border border-slate-700 outline-none"
-    />
+    <div className="flex gap-3">
+
+      <input
+        type="text"
+        placeholder="Search State..."
+        className="flex-1 bg-slate-800 rounded-lg px-4 py-3 border border-slate-700"
+      />
+
+      <button className="bg-blue-600 px-5 rounded-lg hover:bg-blue-700">
+
+        Search
+
+      </button>
+
+    </div>
   );
 }
