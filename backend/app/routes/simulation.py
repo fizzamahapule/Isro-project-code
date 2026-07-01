@@ -1,23 +1,35 @@
 from fastapi import APIRouter
 
-router = APIRouter(
+router=APIRouter(
     prefix="/simulation",
     tags=["Simulation"]
 )
 
-@router.get("/whatif")
-def what_if(
-    rainfall: float,
-    temperature: float
+@router.get("/")
+
+def simulation(
+    rainfall:float,
+    temperature:float
 ):
 
-    flood = "Low"
+    flood="Low"
 
-    if rainfall > 250:
-        flood = "High"
+    if rainfall>200:
+        flood="High"
 
-    return {
-        "rainfall": rainfall,
-        "temperature": temperature,
-        "flood_risk": flood
+    drought="Low"
+
+    if temperature>40:
+        drought="High"
+
+    return{
+
+        "rainfall":rainfall,
+
+        "temperature":temperature,
+
+        "flood_risk":flood,
+
+        "drought_risk":drought
+
     }
