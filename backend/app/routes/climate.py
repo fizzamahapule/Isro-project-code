@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-
+print("Climate Router Loaded ✅")
 from app.services.data_loader import (
     get_latest_data,
     get_latest_state,
