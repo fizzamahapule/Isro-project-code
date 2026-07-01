@@ -8,3 +8,4 @@ torchvision
 torchaudio
 python-multipart
 python-dotenv
+openpyxl
