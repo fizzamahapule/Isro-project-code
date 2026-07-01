@@ -1,21 +1,24 @@
 from fastapi import APIRouter
 
+from app.ai.predict import predict
+
 router = APIRouter(
     prefix="/prediction",
     tags=["Prediction"]
 )
 
-@router.get("/rainfall")
-def rainfall():
+@router.get("/{state}")
 
-    return {
-        "predicted_rainfall":228
-    }
+def prediction(state:str):
 
+    sample=[30,75,20,8]
 
-@router.get("/temperature")
-def temperature():
+    value=predict(sample)
 
-    return {
-        "predicted_temperature":31.5
+    return{
+
+        "state":state,
+
+        "predicted_temperature":value
+
     }
